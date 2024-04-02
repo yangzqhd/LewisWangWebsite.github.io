@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: white;
+	font-family: "Gill Sans", sans-serif;
+	/* font-family: "Georgia", sans-serif; */
+	/*font-weight: 800;*/
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #7a3405;
+  height: 8vh;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.img_container {
+    position: relative;
+    max-width: 100%;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+    display: block;
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Keeps the aspect ratio of the image */
+}
+
+.profile {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    /*width: 50%; /* Adjust the size as needed */
+    z-index: 1;
+}
+
+.text-block {
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    z-index: 2; /* Ensure text block is above the background image */
+    /*background: rgba(255, 255, 255, 0.5); /* Optional: for better readability */
+    /*padding: 20px;*/
+    color: white;
+}
+
+.text-block h1 {
+    font-size: 70px;
+}
+
+/*.img_container img {
+/*    display: block;
+/*    width: 100%; /* Adjust as needed */
+/*    height: 100%; /* Keeps the aspect ratio of the image */
+/*    margin-bottom: 0px; /* Space between the image and the title */
+/*    position: relative;
+/*    top: 0;
+/*    left: 0;
+/*}*/
+
+/*.img_container text-block{
+  position: absolute;
+}
+
+.background {
+  position: relative;
+}
+.profile {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}*/
+
+.bio {
+    margin-top: 20px; /* Adjust as needed to create space below the background image */
+    padding-left: 480px; /* This should be at least equal to the width of the profile image */
+    margin-right: 160px;
+    font-size: 20px
+}
+
+.bio p {
+    margin-bottom: 20px; /* Adjust the value as needed */
+    text-align: justify;
+}
